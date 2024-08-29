@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>健康數據登記</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>健康數據登記</h1>
+    <form id="health-form">
+        <label for="measurement-date">測量日期：</label>
+        <input type="date" id="measurement-date" name="measurement-date" required><br><br>
+
+        <label for="temperature">體溫 (°C)：</label>
+        <input type="number" id="temperature" name="temperature" step="0.1"><br><br>
+
+        <label for="heartrate">心率 (bpm)：</label>
+        <input type="number" id="heartrate" name="heartrate" required><br><br>
+
+        <label for="systolic">收縮壓 (mmHg)：</label>
+        <input type="number" id="systolic" name="systolic" required><br><br>
+
+        <label for="diastolic">舒張壓 (mmHg)：</label>
+        <input type="number" id="diastolic" name="diastolic" required><br><br>
+
+        <label for="time-of-day">時間段：</label>
+        <select id="time-of-day" name="time-of-day" required>
+            <option value="早上">早上</option>
+            <option value="中午">中午</option>
+            <option value="晚上">晚上</option>
+        </select><br><br>
+
+        <button type="submit">提交</button>
+    </form>
+
+    <h2>記錄的健康數據</h2>
+    <button id="clear-button" class="clear-button">清除所有資料</button>
+    <table id="data-table">
+    
+        <thead>
+            <tr>
+                <th>紀錄日期</th>
+                <th>紀錄時間</th>
+                <th>測量日期</th>
+                <th>時段</th>
+                <th>體溫 (°C)</th>
+                <th>心率 (bpm)</th>
+                <th>收縮壓 (mmHg)</th>
+                <th>舒張壓 (mmHg)</th>
+                <th>刪除</th> <!-- 新增列 -->
+            </tr>
+        </thead>
+        <tbody>
+            <!-- 記錄的數據將顯示在這裡 -->
+        </tbody>
+    </table>
+    <button id="export-btn">匯出 Excel</button>
+
+    <script src="script.js"></script>
+    <!-- 添加 xlsx 库 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
+</body>
+</html>

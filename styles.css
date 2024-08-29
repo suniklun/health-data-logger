@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background: linear-gradient(to right, #f18ef8, #feb47b); /* 從左到右的漸變背景 */
+    color: #333; /* 文字顏色 */
+    font-family: Arial, sans-serif; /* 字體 */
+    }
+    
+
+h1, h2 {
+    text-align: center;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4CAF50; /* 綠色背景 */
+    border: none; /* 去掉邊框 */
+    color: white; /* 白色文字 */
+    padding: 15px 32px; /* 內邊距 */
+    text-align: center; /* 文字對齊方式 */
+    text-decoration: none; /* 去掉下劃線 */
+    display: inline-block; /* 使按鈕為行內塊元素 */
+    font-size: 16px; /* 字體大小 */
+    margin: 4px 2px; /* 外邊距 */
+    cursor: pointer; /* 手型光標 */
+    border-radius: 8px; /* 圓角邊框 */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* 增加陰影效果 */
+    transition: background-color 0.3s; /* 背景顏色變化效果 */
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+textarea {
+    width: 100%; /* 佔滿整個容器 */
+    padding: 12px; /* 內邊距 */
+    border: 2px solid #ddd; /* 邊框顏色 */
+    border-radius: 4px; /* 圓角邊框 */
+    box-sizing: border-box; /* 包括邊框和內邊距 */
+    font-size: 16px; /* 字體大小 */
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="date"]:focus,
+textarea:focus {
+    border-color: #4CAF50; /* 聚焦時邊框顏色 */
+    outline: none; /* 去掉預設的聚焦邊框 */
+}
+
+
+button:hover {
+    background-color: #45a049; /* 懸停時改變背景顏色 */
+}
+
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #f9f9f9;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+table {
+    width: 100%; /* 佔滿整個容器 */
+    border-collapse: collapse; /* 讓邊框合併 */
+    margin-top: 20px; /* 上方間距 */
+}
+
+th, td {
+    border: 1px solid #090808; /* 邊框顏色 */
+    padding: 12px; /* 內邊距 */
+    text-align: left; /* 文字左對齊 */
+}
+
+th {
+    background-color: #77d3e3; /* 表頭背景顏色 */
+    color: rgba(92, 35, 77, 0.991); /* 表頭文字顏色 */
+}
+.clear-button {
+    background-color: #f44336; /* 紅色背景 */
+    border: none; /* 去掉邊框 */
+    color: white; /* 文字顏色 */
+    padding: 15px 32px; /* 內邊距 */
+    text-align: center; /* 文字居中 */
+    text-decoration: none; /* 去掉下劃線 */
+    display: inline-block; /* 使按鈕為行內塊元素 */
+    font-size: 16px; /* 字體大小 */
+    margin: 4px 2px; /* 外邊距 */
+    cursor: pointer; /* 手型光標 */
+    border-radius: 8px; /* 圓角邊框 */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* 增加陰影效果 */
+    transition: background-color 0.3s; /* 背景顏色變化效果 */
+}
+
+.clear-button:hover {
+    background-color: #c62828; /* 懸停時背景顏色 */
+}
+.delete-btn {
+    color: red;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+
+
+
+
